@@ -112,6 +112,7 @@ body {
   border: none;
   transition: all 0.4s;
   position: relative;
+  margin: 2px;
 }
 
 .btn-custome::before {
