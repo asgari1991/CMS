@@ -7,10 +7,10 @@ import routes from "./routes";
 export default function App() {
   const router=useRoutes(routes)
   return <>
-  <div class="container px-0">
+  <div className="container px-0">
   <Header/>
-        <main class="main">
-          <div class="row justify-content-between mx-0">
+        <main className="main">
+          <div className="row justify-content-between mx-0">
            <Sidebar/>
            {router}
           </div>

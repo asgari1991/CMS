@@ -1,25 +1,24 @@
 import React from "react";
 
-export default function UserItem() {
+export default function UserItem({firstname,lastname,email}) {
   return (
-    <div class="uesrs__item">
-    <div class="users__info">
+    <div className="uesrs__item">
+    <div className="users__info">
       <img
         src="../../img/admin/profile/banana.png"
         alt="photo user"
-        class="users__img"
+        className="users__img"
       />
-      <div class="users__details">
-        <p class="users__name my-0">محمد عسکری</p>
-        <p lang="en" class="users__email">
-          m.askari1991@gmail.com
-        </p>
+      <div className="users__details">
+        <p className="users__name my-0">{firstname} {lastname} </p>
+        <p lang="en" className="users__email">
+{email}        </p>
       </div>
     </div>
-    <div class="users__btns">
-      <button class="btn-custome btn-custome--gray">پیام ها</button>
-      <button class="btn-custome btn-custome__blue">اطلاعات</button>
-      <button class="btn-custome btn-custome__red">حذف</button>
+    <div className="users__btns">
+      <button className="btn-custome btn-custome--gray">پیام ها</button>
+      <button className="btn-custome btn-custome__blue">اطلاعات</button>
+      <button className="btn-custome btn-custome__red">حذف</button>
     </div>
   </div>
   )
