@@ -1,6 +1,26 @@
 import React from "react";
+import {useDispatch} from 'react-redux'
+import swal from 'sweetalert'
+import { removeArticle } from "../../Redux/store/articles";
 
-export default function ArticleBox({title,desc,category,views}) {
+export default function ArticleBox({_id,title,desc,category,views}) {
+  const dispatch=useDispatch()
+  const removeHandler=()=>{
+    swal({
+      title:"آیا از حذف مطمئن هستید؟",
+      icon:"warning",
+      buttons:["خیر","بله"]
+    }).then((result)=>{
+      if (result){
+        dispatch(removeArticle(_id))
+        swal({
+          title:"مقاله با موفقیت حذف شد",
+          icon:"success",
+          buttons:["اوکی"]
+        })
+      }
+    })
+  }
   return(
     <div className="articles__item">
     <img
@@ -33,7 +53,7 @@ export default function ArticleBox({title,desc,category,views}) {
           </div>
         </div>
         <div className="articles__btns">
-          <button className="op-btn btn btn-danger btn-lg">حذف</button>
+          <button className="op-btn btn btn-danger btn-lg" onClick={removeHandler}>حذف</button>
           <button className="op-btn btn btn-info btn-lg">ویرایش</button>
         </div>
       </div>
