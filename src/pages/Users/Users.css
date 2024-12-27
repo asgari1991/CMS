@@ -9,10 +9,10 @@
     gap: 2rem;
   }
   
-  .active {
+  .active-user {
     width: 12rem;
     height: 2px;
-    background-color: var(--blue);
+    background-color:var(--blue);
     position: absolute;
     top: 6.5rem;
     right: 1%;

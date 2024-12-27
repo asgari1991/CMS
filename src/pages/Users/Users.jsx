@@ -43,7 +43,7 @@ export default function Users() {
          
         </li>
       </ul>
-      <div className="active"></div>
+      <div className="active-user"></div>
 
       <div className="users">
         <form action="#" className="form row justify-content-between gap-3 mx-0">

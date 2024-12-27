@@ -1,6 +1,7 @@
 .products {
     height: 72%;
     padding: 2rem;
+    overflow-y: auto;
   }
   
   .new-course {
@@ -61,7 +62,7 @@
     display: flex;
   }
   
-  .active {
+  .active-course {
     width: 12rem;
     height: 2px;
     background-color: var(--blue);

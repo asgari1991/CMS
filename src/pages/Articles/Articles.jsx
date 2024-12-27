@@ -39,7 +39,7 @@ export default function Articles() {
           </Link>
         </li>
       </ul>
-      <div className="active"></div>
+      <div className="active-article"></div>
 
       <div className="articles">
         <div className="articles__list">

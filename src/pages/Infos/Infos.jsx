@@ -32,7 +32,7 @@ export default function Infos() {
           </Link>
         </li>
       </ul>
-      <div className="active"></div>
+      <div className="active-info"></div>
 
       <div className="information">
         <div id="accordion">

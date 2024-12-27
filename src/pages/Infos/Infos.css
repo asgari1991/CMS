@@ -63,7 +63,7 @@
   
   /* upload input */
   
-  .active {
+  .active-info {
     width: 12rem;
     height: 2px;
     background-color: var(--blue);

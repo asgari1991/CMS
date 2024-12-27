@@ -31,6 +31,7 @@ export default function Courses() {
             <span className="fa fa-store"></span>
             دوره‌ها
           </Link>
+          
         </li>
 
         <li className="content__tab">
@@ -40,7 +41,7 @@ export default function Courses() {
           </Link>
         </li>
       </ul>
-      <div className="active"></div>
+      <div className="active-course"></div>
 
       <div className="products products-container">
         <div className="products__list products-wrapper">
